@@ -13,6 +13,11 @@ Place up to three lights, choose direction, intensity, color, background and atm
 > **PT:** O node compila prompt e referência visual. Não é um adaptador de luz e não garante que o H3 siga a iluminação perfeitamente.  
 > **EN:** The node compiles a prompt and visual reference. It is not a lighting adapter and cannot guarantee perfect H3 lighting control.
 
+
+
+https://github.com/user-attachments/assets/a724a5b2-fcfb-4d4d-9e2b-78e2d02dea72
+
+
 ---
 
 ## Instalação / Installation
