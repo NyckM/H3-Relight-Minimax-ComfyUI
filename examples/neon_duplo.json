@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "preset": "Blade Runner",
+  "lights": [
+    {
+      "type": "spotlight",
+      "intensity": 70,
+      "azimuth": -55,
+      "elevation": -10,
+      "colorMode": "hex",
+      "color": "#ff00ee",
+      "kelvin": 6500
+    },
+    {
+      "type": "spotlight",
+      "intensity": 70,
+      "azimuth": 55,
+      "elevation": -10,
+      "colorMode": "hex",
+      "color": "#1a33ff",
+      "kelvin": 6500
+    }
+  ],
+  "background": "default",
+  "effect": "Blade Runner"
+}

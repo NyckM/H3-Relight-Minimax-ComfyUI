@@ -1,0 +1,3 @@
+numpy
+# Windows has no system time-zone database; zoneinfo needs this for daylight saving in Sol H3.
+tzdata

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "preset": null,
+  "lights": [
+    {
+      "type": "rectAreaLight",
+      "intensity": 65,
+      "azimuth": 45,
+      "elevation": 40,
+      "colorMode": "kelvin",
+      "kelvin": 4500,
+      "color": "#ffffff"
+    },
+    {
+      "type": "rectAreaLight",
+      "intensity": 20,
+      "azimuth": -60,
+      "elevation": 15,
+      "colorMode": "kelvin",
+      "kelvin": 5600,
+      "color": "#ffffff"
+    }
+  ],
+  "background": "default",
+  "effect": "default"
+}

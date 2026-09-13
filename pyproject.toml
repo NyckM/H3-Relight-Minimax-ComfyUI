@@ -1,0 +1,16 @@
+[project]
+name = "comfyui-h3-relight"
+description = "Estudio de luz para o MiniMax H3: ate 3 luzes numa cupula 3D, esfera de referencia e prompt de relight para o H3 Edit, seguindo a skill Relight da MiniMax."
+version = "1.1.2"
+requires-python = ">=3.9"
+dependencies = ["numpy", "tzdata"]
+keywords = ["BruxosDoVFX", "bruxosdovfx", "bruxos-do-vfx", "minimax", "h3", "relight", "lighting", "light direction", "sun position", "time of day"]
+
+[project.urls]
+Repository = "https://github.com/bruxosdovfx/ComfyUI-H3-Relight"
+
+[tool.comfy]
+PublisherId = "bruxosdovfx"
+DisplayName = "Relight H3 · BruxosDoVFX"
+Icon = "https://raw.githubusercontent.com/bruxosdovfx/ComfyUI-H3-Relight/main/web/logo.png"
+includes = []

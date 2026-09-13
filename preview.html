@@ -1,0 +1,24 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Relight H3 · BruxosDoVFX — prévia</title>
+<style>body{background:#101016;color:#eee;font:15px system-ui;max-width:680px;margin:24px auto;padding:16px}h1{font-size:22px}textarea{box-sizing:border-box;width:100%;height:120px;background:#202027;color:#eee;padding:12px;border:1px solid #555;border-radius:8px;font:12px ui-monospace,monospace}p{color:#aaa;line-height:1.5}</style>
+<h1>Relight H3 · BruxosDoVFX</h1><p>Prévia do painel fora do ComfyUI. Use o botão de imagem de referência para carregar uma foto. Esta página não executa o modelo; sirva a pasta por HTTP (por exemplo <code>python -m http.server</code>).</p>
+<main></main><p>Iluminação salva pelo node:</p><textarea aria-label="Iluminação JSON"></textarea>
+<script type="module">
+import {createRelightEditor} from './web/relight_panel.js';
+const input=document.querySelector('textarea');
+const state={runtime:'still | 5-frame relight',reference:'semantic sphere (Picture 2)',ball:'sphere (MiniMax)'};
+input.value=JSON.stringify({version:1,preset:null,lights:[{type:'rectAreaLight',intensity:60,azimuth:45,elevation:35,colorMode:'kelvin',color:'#ffffff',kelvin:5600},{type:'spotlight',intensity:45,azimuth:-150,elevation:25,colorMode:'hex',color:'#4aa8ff',kelvin:6500}],background:'default',effect:'default'});
+const flip=(key,options,label)=>{const on=state[key]===options[1];return {label:label+(on?' ON':' OFF'),on,toggle(){state[key]=options[on?0:1];}}};
+const editor=createRelightEditor({read:()=>input.value,write:v=>input.value=v,
+  looks:()=>({sun:state.ball.includes('ground'),reference:!state.reference.startsWith('text')}),
+  switches:()=>[flip('runtime',['still | 5-frame relight','directed | 39-frame settle'],'Âncora na foto'),
+    flip('reference',['text only','semantic sphere (Picture 2)'],'Esfera no Picture 2'),
+    flip('ball',['sphere (MiniMax)','sphere + ground shadow (LTX/Venti)'],'Sombra no chão')]});
+document.querySelector('main').append(editor.element);input.addEventListener('change',editor.sync);
+window.__editor=editor;
+import {createSunCompass} from './web/sun_compass.js';
+let heading=0;
+const compass=createSunCompass({getHeading:()=>heading,setHeading:v=>heading=v});
+document.querySelector('main').append(compass.element);
+compass.show({where:'São Paulo',tz:'America/Sao_Paulo',utc:'2026-09-12',altitude:30,sun_azimuth:270,azimuth:-90,elevation:30,kelvin:4500,below_horizon:false});
+window.__compass=compass;
+</script></html>
