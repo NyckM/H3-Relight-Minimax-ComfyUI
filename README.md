@@ -35,7 +35,6 @@ https://github.com/user-attachments/assets/55a83eac-68ff-4960-a28a-042bc3780ea3
 
 Instale as dependências / Install dependencies:
 ## Requirements / Requisitos
-## Requirements / Requisitos
 
 | Type         | Model / Node                                                 | Link                                                                    | Function / Função                           | Local                              |
 | ------------ | ------------------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------------- | ---------------------------------- |
