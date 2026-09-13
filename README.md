@@ -82,6 +82,15 @@ Calculates the real sun position using location, date, time and camera heading.
 
 ---
 
+
+
+https://github.com/user-attachments/assets/e1b29ab7-aa61-40fc-9e4c-50bbdd7a36ab
+
+
+https://github.com/user-attachments/assets/bfda1512-a231-4fe0-b87a-9d6f26f62ae9
+
+
+
 ## Ligações principais / Main connections
 
 | Saída / Output | Ligue em / Connect to |
