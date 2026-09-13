@@ -35,6 +35,151 @@ https://github.com/user-attachments/assets/55a83eac-68ff-4960-a28a-042bc3780ea3
 
 Instale as dependências / Install dependencies:
 
+Custom Nodes / Nodes Personalizados
+Bruxos do VFX Nodes
+Repository / Repositório: NyckM / Bruxos-do-VFX-Nodes
+
+ComfyUI-KJNodes
+
+PT: Usado pelo node MiniMaxH3MemoryEfficientSageAttentionPatch. No workflow atual esse patch está desativado.
+EN: Used by MiniMaxH3MemoryEfficientSageAttentionPatch. This patch is disabled in the current workflow.
+
+Repository / Repositório: ComfyUI-KJNodes
+
+ComfyUI Sol-Attn
+
+PT: O workflow contém o node EastMoeSolAttn, identificado internamente como eastmoe/ComfyUI-Sol-Attn. Ele está desativado na configuração atual.
+EN: The workflow contains the EastMoeSolAttn node, internally identified as eastmoe/ComfyUI-Sol-Attn. It is disabled in the current configuration.
+
+Note / Nota: não encontrei uma página pública verificável para o repositório eastmoe/ComfyUI-Sol-Attn. Uma implementação pública atual de Sol-Attn para ComfyUI pode ser encontrada aqui:
+
+Repository / Repositório alternativo: ComfyUI-sol-attn
+
+ComfyUI-Custom-Scripts — pysssss
+
+PT: Usado pelos nodes ShowText|pysssss para visualizar e revisar os prompts gerados.
+EN: Used by the ShowText|pysssss nodes to display and review generated prompts.
+
+Repository / Repositório: ComfyUI-Custom-Scripts
+
+ComfyUI-Pixaroma
+
+PT: Usado pelos nodes PixaromaLabel para organizar visualmente o workflow.
+EN: Used by the PixaromaLabel nodes to visually organize the workflow.
+
+Repository / Repositório: ComfyUI-Pixaroma GitHub mirror
+
+PT: O próprio projeto informa que o desenvolvimento principal foi movido para o GitLab.
+EN: The project states that its primary development repository has moved to GitLab.
+
+Models / Modelos
+Diffusion Model / Modelo de Difusão
+
+Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors
+
+PT: Fine-tune Singularity do MiniMax H3 usado como modelo principal de difusão neste workflow.
+EN: MiniMax H3 Singularity fine-tune used as the main diffusion model in this workflow.
+
+Folder / Pasta:
+
+ComfyUI/models/diffusion_models/Minimax/
+
+Download / Modelo: WarmBloodAban / Minimax-h3_Singularity
+
+Text Encoder / Codificador de Texto
+
+qwen3vl_32b_minimax_h3_int8_convrot.safetensors
+
+PT: Qwen3-VL 32B INT8 ConvRot usado como text encoder do MiniMax H3.
+EN: Qwen3-VL 32B INT8 ConvRot used as the MiniMax H3 text encoder.
+
+Folder / Pasta:
+
+ComfyUI/models/text_encoders/
+
+Download: qwen3vl_32b_minimax_h3_int8_convrot.safetensors
+
+Video VAE
+
+minimax_h3_video_vae_fp16.safetensors
+
+PT: VAE de vídeo FP16 oficial usado para decodificar os latentes de vídeo do H3.
+EN: Official FP16 video VAE used to decode MiniMax H3 video latents.
+
+Folder / Pasta:
+
+ComfyUI/models/vae/Minimax/
+
+Download: minimax_h3_video_vae_fp16.safetensors
+
+Audio VAE
+
+minimax_h3_audio_vae_fp32.safetensors
+
+PT: VAE de áudio FP32 usado pelo H3 para o áudio nativo sincronizado.
+EN: FP32 audio VAE used by H3 for native synchronized audio.
+
+Folder / Pasta:
+
+ComfyUI/models/vae/Minimax/
+
+Download: minimax_h3_audio_vae_fp32.safetensors
+
+LoRA
+MiniMax H3 Turbo LoRA
+
+minimax_h3_fl2v_turbo_4step_v1.2_768p_comfyui_bf16.safetensors
+
+PT: LoRA Turbo LightX2V usada para acelerar a geração do MiniMax H3. No workflow ela está configurada com strength = 1.0.
+EN: LightX2V Turbo LoRA used to accelerate MiniMax H3 generation. In this workflow it is configured with strength = 1.0.
+
+Folder / Pasta:
+
+ComfyUI/models/loras/minimax/
+
+Download: MiniMax H3 Turbo 4-Step v1.2
+
+Optional models referenced inside the subgraph
+Modelos opcionais referenciados dentro do subgraph
+
+PT: Os arquivos abaixo aparecem como modelos padrão ou metadata do subgraph, mas não são os arquivos atualmente selecionados na configuração externa do workflow.
+
+EN: The files below appear as default models or metadata inside the subgraph, but they are not the models currently selected by the outer workflow configuration.
+
+Diffusion Model
+
+minimax_h3_fl2va_pruned_int8_convrot.safetensors
+
+Repository / Repositório: Comfy-Org / MiniMax-H3
+
+Alternative Text Encoder / Text Encoder alternativo
+
+qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
+
+Repository / Repositório: Comfy-Org / MiniMax-H3
+
+Alternative Turbo LoRA / Turbo LoRA alternativa
+
+minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors
+
+Repository / Repositório: LightX2V / Minimax-h3-Turbo
+
+Quick Installation List / Lista Rápida de Instalação
+Custom Nodes
+Bruxos do VFX Nodes
+ComfyUI-KJNodes
+ComfyUI-Custom-Scripts
+ComfyUI-Pixaroma
+Sol-Attn — optional / opcional
+Models
+Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors
+qwen3vl_32b_minimax_h3_int8_convrot.safetensors
+minimax_h3_video_vae_fp16.safetensors
+minimax_h3_audio_vae_fp32.safetensors
+LoRA
+minimax_h3_fl2v_turbo_4step_v1.2_768p_comfyui_bf16.safetensors
+
+
 ```bash
 pip install -r ComfyUI/custom_nodes/ComfyUI-H3-Relight/requirements.txt
 ```
