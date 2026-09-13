@@ -1,7 +1,11 @@
 # bruxosdovfx · Relight H3
 
+<img width="425" height="555" alt="Captura de tela 2026-09-11 011217" src="https://github.com/user-attachments/assets/cf2740c0-fe32-454d-aa27-6dd8c17ec666" />
+
 Estúdio de luz para **MiniMax H3** dentro do ComfyUI.  
 Lighting studio for **MiniMax H3** inside ComfyUI.
+
+https://github.com/user-attachments/assets/558643ce-e59a-4c9a-ba16-b1527af3a36f
 
 Posicione até três luzes, escolha direção, intensidade, cor, fundo e atmosfera, e gere uma referência de luz + prompt para H3 Edit.  
 Place up to three lights, choose direction, intensity, color, background and atmosphere, and generate a lighting reference + prompt for H3 Edit.
@@ -43,12 +47,18 @@ Também requer / Also requires:
 Estúdio de iluminação com até três luzes.  
 Lighting studio with up to three lights.
 
+<img width="665" height="307" alt="Captura de tela 2026-09-11 011151" src="https://github.com/user-attachments/assets/0b12744b-8c4a-4c99-92ac-dc61373398b4" />
+
 O node gera:
 
 - `compiled_prompt`
 - `options`
 - `light_reference`
 - `minimax_prompt`
+
+https://github.com/user-attachments/assets/9af83797-27e2-4583-b1d5-dfcf57d39e69
+
+
 - `lighting_json`
 - `ltx_prompt`
 - `ball_composite`
